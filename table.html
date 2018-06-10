@@ -1,0 +1,58 @@
+<!-- @author: Kseniya Perepechina
+     @date:   28.04.2018         -->
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title> Pipeline </title>
+        <script src="./source/pipeline.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="inputField" align="center">
+                <h1> Multiplication of a pair of 4-digit numbers from the lower-order digits with a shift of the multiplicand to the the left</h1>
+                
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="firstArray">A =</label>
+                        <input type="text" class="form-control" id="firstArray" placeholder="First array">
+                    </div>
+                    <div class="form-group">
+                        <label for="secondArray">B =</label>
+                        <input type="text" class="form-control" id="secondArray" placeholder="Second array">
+                    </div>
+                </form>
+
+                <form class="form-inline">
+                <div class="form-group">
+                    <label for="arraySize">M =</label>
+                    <input type="number" min = "1" step = "1" class="form-control" id="arraySize" placeholder="Number of elements">
+                </div>
+                <div class="form-group">
+                    <label for="time">T =</label>
+                    <input type="number" min = "1" step = "1" class="form-control" id="time" placeholder="Time per iteration">
+                </div>
+                </form>
+
+                <button type="button" class="btn btn-default" OnClick="processData();">
+                    Multiply
+                </button>
+
+                <h4>
+                    <div id="result"><b></b></div>
+                </h4>
+                    
+            </div>
+
+            <table id="table" class="table table-condensed" border="2" align="center" cellpadding="3"></table>
+
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,20 @@
+/* @author: Kseniya Perepechina
+   @date:   28.04.2018         */
+body {
+  background-image: url(../images/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+table{
+  display: block;
+  overflow: auto;
+  font-size: 12px;
+}
+
+th, td{
+  white-space: nowrap;
+  align-content: center;
+}
